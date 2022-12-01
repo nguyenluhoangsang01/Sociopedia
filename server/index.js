@@ -10,6 +10,7 @@ import authRoutes from "./routes/auth.js";
 // Constants
 const PORT = process.env.PORT || 8000;
 
+// Configurations
 dotenv.config();
 
 const app = express();
