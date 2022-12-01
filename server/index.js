@@ -5,16 +5,10 @@ import express from "express";
 import helmet from "helmet";
 import mongoose from "mongoose";
 import morgan from "morgan";
-import path from "path";
-import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 
 // Constants
 const PORT = process.env.PORT || 8000;
-
-// Configurations
-const __filename = fileURLToPath(import.meta.url);
-export const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
