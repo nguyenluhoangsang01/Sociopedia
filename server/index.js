@@ -6,6 +6,7 @@ import helmet from "helmet";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import authRoutes from "./routes/auth.js";
+import cookieParser from "cookie-parser";
 
 // Constants
 const PORT = process.env.PORT || 8000;
@@ -15,6 +16,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));

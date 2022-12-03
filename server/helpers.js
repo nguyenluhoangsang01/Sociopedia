@@ -1,8 +1,6 @@
 import { mkdir } from "fs";
 import multer from "multer";
-
-// Constants
-const UPLOAD_PATH = "public/uploads";
+import { UPLOAD_PATH } from "./constants.js";
 
 // Format date function
 export const formatDate = (date) => {
