@@ -17,6 +17,7 @@ router.post("/login", login);
 
 // @route POST api/auth/logout
 // @desc Logout user
-// @access Public
-router.post("/logout", logout);
+// @access Private
+router.post("/logout", verifyToken, logout);
+
 export default router;

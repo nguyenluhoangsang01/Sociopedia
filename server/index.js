@@ -1,4 +1,5 @@
 import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -6,7 +7,7 @@ import helmet from "helmet";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import authRoutes from "./routes/auth.js";
-import cookieParser from "cookie-parser";
+import userRouters from "./routes/user.js";
 
 // Constants
 const PORT = process.env.PORT || 8000;
@@ -47,6 +48,7 @@ app.listen(PORT, () =>
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/users", userRouters);
 
 // Route not found
 app.use("/*", (req, res) => {
