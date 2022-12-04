@@ -8,19 +8,19 @@ import verifyToken from "../middleware/verifyToken.js";
 
 const router = express.Router();
 
+// @route POST api/users/friendId
+// @desc Add friend
+// @access Private
+router.post("/:friendId", verifyToken, addFriend);
+
+// @route DELETE api/users/friendId
+// @desc Remove friend
+// @access Private
+router.delete("/:friendId", verifyToken, removeFriend);
+
 // @route GET api/users/friends
 // @desc Get user's friends
 // @access Private
 router.get("/friends", verifyToken, getUserFriends);
-
-// @route PUT api/users/:id/friendId
-// @desc Add friend
-// @access Private
-router.put("/:id/:friendId", verifyToken, addFriend);
-
-// @route DELETE api/users/:id/friendId
-// @desc Remove friend
-// @access Private
-router.delete("/:id/:friendId", verifyToken, removeFriend);
 
 export default router;
