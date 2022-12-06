@@ -141,7 +141,7 @@ export const commentPost = async (req, res, next) => {
     if (!post) return next(sendError(res, "Post not found", 404));
 
     post.comments.unshift({
-      id: (post.comments.length + 1) * Math.floor(Math.random() * 10000),
+      id: (post.comments.length + 1) * Math.floor(Math.random() * 100000000000000),
       message,
       user: userId,
     });
