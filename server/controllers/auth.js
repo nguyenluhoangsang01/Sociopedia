@@ -139,3 +139,42 @@ export const logout = async (req, res, next) => {
     next(error);
   }
 };
+
+export const update = async (req, res, next) => {
+  try {
+    const { userId } = req;
+    const { firstName, lastName, email, phone } = req.body;
+
+    if (!firstName) return next(sendError(res, "First name is required!"));
+    if (!lastName) return next(sendError(res, "Last name is required!"));
+    if (!email) return next(sendError(res, "Email is required!"));
+    if (!validator.isEmail(email))
+      return next(sendError(res, "Email is invalid!"));
+    if (!phone) return next(sendError(res, "Phone is required!"));
+    if (!validator.isMobilePhone(phone, "vi-VN"))
+      return next(sendError(res, "Phone is invalid!"));
+
+    const user = await User.findById(userId);
+
+    if (user.email !== email) {
+      const userAlreadyExistsWithEmail = await User.exists({ email });
+      if (userAlreadyExistsWithEmail)
+        return next(sendError(res, "Email already exists!"));
+    }
+
+    if (user.phone !== phone) {
+      const userAlreadyExistsWithPhone = await User.exists({ phone });
+      if (userAlreadyExistsWithPhone)
+        return next(sendError(res, "Phone already exists!"));
+    }
+
+    await User.findByIdAndUpdate(userId, {
+      $set: req.body,
+      picturePath: req.file ? req.file.filename : user.picturePath,
+    });
+
+    return next(sendSuccess(res, "User updated successfully!"));
+  } catch (error) {
+    next(error);
+  }
+};

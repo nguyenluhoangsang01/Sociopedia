@@ -1,5 +1,5 @@
 import express from "express";
-import { login, logout, register } from "../controllers/auth.js";
+import { login, logout, register, update } from "../controllers/auth.js";
 import { createUploadDir, upload } from "../helpers.js";
 import verifyToken from "../middleware/verifyToken.js";
 
@@ -19,5 +19,10 @@ router.post("/login", login);
 // @desc Logout user
 // @access Private
 router.post("/logout", verifyToken, logout);
+
+// @route PUT api/auth
+// @desc Update user
+// @access Private
+router.put("/", verifyToken, createUploadDir, upload.single("picture"), update);
 
 export default router;

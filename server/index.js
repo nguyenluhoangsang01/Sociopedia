@@ -7,6 +7,7 @@ import helmet from "helmet";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import authRoutes from "./routes/auth.js";
+import postRoutes from "./routes/post.js";
 import userRouters from "./routes/user.js";
 
 // Constants
@@ -49,6 +50,7 @@ app.listen(PORT, () =>
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRouters);
+app.use("/api/posts", postRoutes);
 
 // Route not found
 app.use("/*", (req, res) => {

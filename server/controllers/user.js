@@ -10,7 +10,6 @@ export const addFriend = async (req, res, next) => {
       return next(sendError(res, "You can't add yourself as a friend"));
 
     const user = await User.findById(userId);
-    if (!user) return next(sendError(res, "User not found", 404));
 
     const friend = await User.findById(friendId);
     if (!friend) return next(sendError(res, "User not found", 404));
@@ -33,7 +32,6 @@ export const removeFriend = async (req, res, next) => {
     const { friendId } = req.params;
 
     const user = await User.findById(userId);
-    if (!user) return next(sendError(res, "User not found", 404));
 
     const friend = await User.findById(friendId);
     if (!friend) return next(sendError(res, "User not found", 404));
@@ -57,12 +55,10 @@ export const getUserFriends = async (req, res, next) => {
     const { userId } = req;
 
     const user = await User.findById(userId).select("friends");
-    if (!user) return next(sendError(res, "User not found", 404));
 
     const friends = await User.find({ _id: { $in: user.friends } }).select(
-      "-__v -password"
+      "_id firstName lastName picturePath occupation location"
     );
-
     user.friends = friends;
 
     return next(sendSuccess(res, "User's friends", user));
