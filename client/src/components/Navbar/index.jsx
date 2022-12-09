@@ -1,8 +1,8 @@
 import { GoSearch } from "react-icons/go";
 import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
-import { selectTheme } from "state/theme";
 import { routesCenter, routesRight } from "../../app/routes/navbarRoutes";
+import { selectTheme } from "../../state/theme";
 import Input from "../Input";
 
 const Navbar = () => {

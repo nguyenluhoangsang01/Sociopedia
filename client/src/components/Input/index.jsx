@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectTheme } from "state/theme";
+import { selectTheme } from "../../state/theme";
 
 const Input = ({
   type,

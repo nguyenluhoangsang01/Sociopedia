@@ -1,17 +1,17 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {
-  FLUSH,
-  PAUSE,
-  PERSIST,
-  persistReducer,
-  persistStore,
-  PURGE,
-  REGISTER,
-  REHYDRATE,
+	FLUSH,
+	PAUSE,
+	PERSIST,
+	persistReducer,
+	persistStore,
+	PURGE,
+	REGISTER,
+	REHYDRATE
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import authReducer from "state/auth";
-import themeReducer from "state/theme";
+import authReducer from "../state/auth";
+import themeReducer from "../state/theme";
 
 const persistConfig = {
   key: "root",
