@@ -14,3 +14,129 @@ body,
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
 }
+
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  background-size: 38px 570px;
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/fwJfS2s82lU.png");
+}
+
+.sidebar-icon-0 {
+  background-position: 0 -304px;
+}
+
+.sidebar-icon-1 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+
+.sidebar-icon-2 {
+  background-position: 0 -76px;
+}
+.sidebar-icon-3 {
+  background-position: 0 -418px;
+}
+.sidebar-icon-4 {
+  background-position: 0 -532px;
+}
+.sidebar-icon-5 {
+  background-position: 0 -456px;
+}
+.sidebar-icon-6 {
+  background-position: 0 -190px;
+}
+.sidebar-icon-7 {
+  background-position: 0 -114px;
+}
+.sidebar-icon-8 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/AEtAaL2yH8k.png");
+  background-position: 0 0;
+  background-size: 38px 52px;
+}
+.sidebar-icon-9 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/Zy9sJGThmCS.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-10 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/_JPdPzLmp9j.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-11 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/qR88GIDM38e.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-12 {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/mBH5oR81DT5.png);
+  background-position: -724px -176px;
+  background-size: 942px 338px;
+}
+.sidebar-icon-13 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/9iacGJP1ses.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-14 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/tKwWVioirmj.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-15 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/eChFgZ345zp.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-16 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/BurYAvSo-jg.png");
+  background-position: 0px 0px;
+  background-size: 38px 430px;
+}
+.sidebar-icon-17 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/GyZZ7Jrr5OV.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-18 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/fwJfS2s82lU.png");
+  background-position: 0px -342px;
+  background-size: 38px 570px;
+}
+.sidebar-icon-19 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/fwJfS2s82lU.png");
+  background-position: 0px -38px;
+  background-size: 38px 570px;
+}
+.sidebar-icon-20 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/fwJfS2s82lU.png");
+  background-position: 0px -380px;
+  background-size: 38px 570px;
+}
+.sidebar-icon-21 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/BurYAvSo-jg.png");
+  background-position: 0px -38px;
+  background-size: 38px 430px;
+}
+.sidebar-icon-22 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/HBcx-giUZ2Y.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-23 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/xH4w-lk44we.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-24 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/XEWvxf1LQAG.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}
+.sidebar-icon-25 {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/WcCzeboYevF.png");
+  background-position: 0 0;
+  background-size: 36px 36px;
+}

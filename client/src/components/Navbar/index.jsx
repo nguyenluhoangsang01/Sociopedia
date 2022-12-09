@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GoSearch } from "react-icons/go";
 import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
@@ -7,10 +8,11 @@ import Input from "../Input";
 
 const Navbar = () => {
   const { mode } = useSelector(selectTheme);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <div
-      className={`flex items-center justify-between px-4 h-[56px] ${
+      className={`flex items-center justify-between px-4 h-[56px] fixed w-full z-30 ${
         mode === "dark" ? "bg-[#242526] " : "bg-[#fff] shadow-md"
       }`}
     >
@@ -27,6 +29,8 @@ const Navbar = () => {
           placeholder="Search Sociopedia"
           icon={<GoSearch />}
           className="w-[212px] h-[40px]"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
 

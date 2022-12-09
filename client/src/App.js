@@ -14,7 +14,13 @@ function App() {
   const { mode } = useSelector(selectTheme);
 
   return (
-    <div className={mode}>
+    <div
+      className={
+        mode === "dark"
+          ? "bg-[#18191A] text-[#E4E6EB]"
+          : "bg-[#F0F2F5] text-[#050505]"
+      }
+    >
       <Routes>
         <Route element={<Default />}>
           <Route path="/" element={<Home />} />
