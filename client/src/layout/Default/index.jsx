@@ -13,16 +13,6 @@ const Default = () => {
 
         <div className="min-w-[800px] px-12 overflow-scroll max-h-screen scrollbar-hide">
           <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
-          <Outlet />
         </div>
 
         <Contacts />

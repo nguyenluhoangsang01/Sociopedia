@@ -19,15 +19,13 @@ const CreatePost = () => {
   const { mode } = useSelector(selectTheme);
   const [isOpenCreateModal, setIsOpenCreateModal] = useState(false);
 
-  console.log(isOpenCreateModal);
-
   return (
     <div
-      className={`w-full px-4 py-3 rounded-lg divide-y ${
+      className={`w-full px-4 py-3 rounded-lg divide-y divide-[#ffffff1a] ${
         mode === "light" ? "bg-[#fff]" : "bg-[#242526]"
       }`}
     >
-      <div className="flex items-center gap-2 pb-2">
+      <div className="flex items-center gap-2 pb-4">
         <Link className="cursor-pointer" to="/nguyenluhoangsang01">
           <img
             src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-1/295865964_785774115910590_4688402722710114299_n.jpg?stp=cp0_dst-jpg_p86x86&_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=TPblBacxZhIAX9gNWWP&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfArAPQC2wBM_jsz4RvkMjnyTrNOhh3XhWnpqK-a9WpVGQ&oe=6398C5BE"
