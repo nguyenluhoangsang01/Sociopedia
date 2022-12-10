@@ -8,10 +8,22 @@ const Default = () => {
     <div>
       <Navbar />
 
-      <div className="grid grid-cols-3 pt-[60px]">
+      <div className="pt-[60px] flex justify-between">
         <Sidebar />
 
-        <Outlet />
+        <div className="min-w-[800px] px-12 overflow-scroll max-h-screen scrollbar-hide">
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+          <Outlet />
+        </div>
 
         <Contacts />
       </div>

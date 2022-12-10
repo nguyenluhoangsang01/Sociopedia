@@ -7,12 +7,12 @@ import { selectTheme } from "../../state/theme";
 import SidebarRoute from "../SidebarRoute";
 
 const Sidebar = () => {
-  const { mode } = useSelector(selectTheme);
   const limit = 10;
+  const { mode } = useSelector(selectTheme);
   const [isShowFull, setIsShowFull] = useState(false);
 
   return (
-    <ul className="h-screen overflow-y-scroll p-4 scrollbar-hide sticky max-w-[350px]">
+    <ul className="h-screen overflow-y-scroll scrollbar-hide p-4 sticky min-w-[350px]">
       <Link
         to="/nguyenluhoangsang01"
         className={`flex items-center gap-4 w-full h-[48px] cursor-pointer transition rounded-lg ${
@@ -41,7 +41,7 @@ const Sidebar = () => {
             <SidebarRoute route={route} idx={idx} key={route.path} />
           ))}
 
-      <li
+      <div
         className={`flex items-center gap-4 w-full h-[48px] cursor-pointer transition rounded-lg pl-2 ${
           mode === "dark" ? "hover:bg-[#303031]" : "hover:bg-[#E4E6E9]"
         }`}
@@ -58,7 +58,7 @@ const Sidebar = () => {
             <span className="text-[15px] font-medium">See less</span>
           </>
         )}
-      </li>
+      </div>
     </ul>
   );
 };

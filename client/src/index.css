@@ -140,3 +140,20 @@ body,
   background-position: 0 0;
   background-size: 36px 36px;
 }
+
+.create-post {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/PUy8Lux0d5B.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 34px 464px;
+}
+.create-post-0 {
+  background-position: 0 -60px;
+}
+.create-post-1 {
+  background-position: 0 -242px;
+}
+.create-post-2 {
+  background-position: 0 -190px;
+}

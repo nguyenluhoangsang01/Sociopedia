@@ -1,5 +1,11 @@
+import CreatePost from "../../components/CreatePost";
+
 const Home = () => {
-  return <div>App</div>;
+  return (
+    <div className="mt-6">
+      <CreatePost />
+    </div>
+  );
 };
 
 export default Home;

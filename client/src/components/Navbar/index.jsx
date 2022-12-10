@@ -44,6 +44,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "border-b-4 border-[#2374E1] transition" : ""
               }
+              title={route.alt}
             >
               <li
                 className={`w-[120px] h-[56px] mx-auto flex items-center justify-center cursor-pointer transition rounded-lg [&>svg]:text-[28px] ${
@@ -71,6 +72,7 @@ const Navbar = () => {
                     ? "bg-[#3A3B3C] hover:bg-[#4E4F50]"
                     : "bg-[#E4E6EB] hover:bg-[#D8DADF] text-black"
                 }`}
+                title={route.alt}
               >
                 <li className="[&>svg]:text-[24px]">{route.icon}</li>
               </Link>
@@ -82,6 +84,7 @@ const Navbar = () => {
                     ? "bg-[#3A3B3C] hover:bg-[#4E4F50]"
                     : "bg-[#E4E6EB] hover:bg-[#D8DADF] text-black"
                 }`}
+                title={route.alt}
               >
                 {route.icon}
               </li>
