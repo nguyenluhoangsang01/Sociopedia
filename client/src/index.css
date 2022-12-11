@@ -157,3 +157,25 @@ body,
 .create-post-2 {
   background-position: 0 -190px;
 }
+
+.like-post {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/uzUAZCT8n_k.png");
+  background-repeat: no-repeat;
+  background-position: 0px -262px;
+  background-size: 26px 836px;
+  width: 18px;
+  height: 18px;
+  -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg)
+    brightness(90%) contrast(96%);
+}
+
+.comment-post {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/uzUAZCT8n_k.png");
+  background-repeat: no-repeat;
+  background-position: 0px -222px;
+  background-size: 26px 836px;
+  width: 18px;
+  height: 18px;
+  -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg)
+    brightness(90%) contrast(96%);
+}
