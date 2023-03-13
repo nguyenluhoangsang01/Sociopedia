@@ -3,7 +3,8 @@ import { sendError } from "../helpers.js";
 
 const verifyToken = (req, res, next) => {
   try {
-    const token = req.cookies.refreshToken;
+    const authorization = req.headers.authorization;
+    const token = authorization?.split(" ")[1];
 
     if (!token) return next(sendError(res, "Access denied", 401));
 

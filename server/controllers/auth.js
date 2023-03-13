@@ -134,7 +134,11 @@ export const logout = async (req, res, next) => {
     res.clearCookie("refreshToken");
 
     // Send the response
-    return next(sendSuccess(res, "User logged out successfully!"));
+    return next(
+      sendSuccess(res, "User logged out successfully! 1", {
+        test: req.ip,
+      })
+    );
   } catch (error) {
     next(error);
   }
